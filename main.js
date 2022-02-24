@@ -65,7 +65,7 @@ class ApiService {
         this.http = http;
     }
     GetUserData() {
-        return this.http.get('https://localhost:44306/api/student/get-all-students')
+        return this.http.get('http://173.249.31.185:5295/student/get-all-students')
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["map"])(r => {
             var response = new _models_responseEntity__WEBPACK_IMPORTED_MODULE_2__["ResponseEntity"](r);
             console.log(response);
